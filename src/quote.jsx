@@ -9,7 +9,7 @@ export default function Quote(){
     var [quote,setQuote]=useState("")
     useEffect(()=>{
         async function getQuote(){
-            const response = await fetch("/.netlify/functions/getPositiveQuotes");
+            const response = await fetch("/.netlify/functions/first");
             const result = await response.json();
             setQuote(result.quote);
         }

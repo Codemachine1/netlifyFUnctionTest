@@ -4,11 +4,10 @@
     "build": "snowpack build",
     "test": "web-test-runner \"src/**/*.test.jsx\"",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
-    "lint": "prettier --check \"src/**/*.{js,jsx}\"",
     "start:server": "netlify-lambda serve ./src/functions"
+
   },
   "dependencies": {
-    "http-proxy-middleware": "^1.0.6",
     "netlify-lambda": "^2.0.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
