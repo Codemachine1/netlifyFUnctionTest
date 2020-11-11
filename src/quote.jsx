@@ -15,7 +15,7 @@ export default function Quote(){
         }
         getQuote()
     
-    })
+    },[])
     return(
     <p>{quote}</p>
     )
